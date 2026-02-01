@@ -1,0 +1,49 @@
+/* src/styles/base.css
+   Global variables + neutral resets used by BOTH projects.
+   Keep project-specific styling inside projectA/projectB CSS files. */
+
+/* =========================================================
+   GLOBAL VARS / RESET
+   ========================================================= */
+:root{
+  --brand: #13294f;
+  --accent: #d57f47;
+
+  /* Fixed bottom timeline */
+  --timeline-h: 120px;
+  --pad-x: 20px;
+  --track-h: 4px;
+  --line-b: 49px;
+  --preview-h: 112px;
+
+  /* Space kept clear for the fixed bar + preview */
+  --reserve: calc(var(--timeline-h) + var(--preview-h));
+
+  /* Mid row minimum (header ~140px + a little spacing) */
+  --midrow-min: calc(100svh - var(--reserve) - 140px - 24px);
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+  color: var(--brand);
+  background: transparent;
+}
+
+/* Hide page scroll whenever any landing or ending screen is showing */
+body:has(.timeline-landing),
+body:has(.timeline-end){
+  overflow: hidden;
+}
+
+/* =========================================================
+   RESPONSIVE VAR OVERRIDES (apply to whole app)
+   ========================================================= */
+@media (max-width: 1200px){
+  :root{ --timeline-h: 100px; --line-b: 53px; --reserve: calc(var(--timeline-h) + var(--preview-h)); }
+}
+@media (max-width: 900px){
+  :root{ --timeline-h: 180px; --line-b: 64px; --reserve: calc(var(--timeline-h) + var(--preview-h)); }
+}
