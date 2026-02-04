@@ -131,6 +131,7 @@ const hidePreview = (itemIdx, label) => {
         </ul>
       </div>
 
+
       {preview?.img && (
         <div
           className="bottom-timeline__preview-portal"

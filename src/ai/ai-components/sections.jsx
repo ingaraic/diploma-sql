@@ -11,8 +11,8 @@ import { Box, Flex, Stack, Title, Text } from "@mantine/core";
 import sunBirthVid from "../animations/videos/sun-birth.mp4";
 import planetBirthVid from "../animations/videos/planet-birth.mp4";
 import moonCreationVid from "../animations/videos/moon-creation.mp4";
-import bombardmentVid from "../animations/videos/bombardment.mp4";
-import stableSolarSystemVid from "../animations/videos/stable-solar-system.mp4";
+import bombardmentVid from "../animations/videos/bombar-video.mp4";
+import stableSolarSystemVid from "../animations/videos/stable-video.mp4";
 import redGiantVid from "../animations/videos/red-giant.mp4";
 import planetaryNebulaVid from "../animations/videos/planetary-nebula.mp4";
 import whiteDwarfVid from "../animations/videos/white-dwarf.mp4";
@@ -136,7 +136,7 @@ export const sections = [
     content:
       "Takrat se je Osončje soočilo z obdobjem, v katerem so asteroidi in kometi množično trkali v planete in njihove lune. Ti trki so preoblikovali površine nebesnih teles, ustvarjali kraterje in morda celo prinesli vodo ter organske spojine na Zemljo. S tem so morda prispevali k nastanku življenja.",
     era: "4 milijarde let nazaj",
-    image: "https://scx2.b-cdn.net/gfx/news/2016/lateheavybom.jpg",
+    image: "https://astrobiology.nasa.gov/uploads/filer_public_thumbnails/filer_public/ff/b2/ffb28c13-7300-4ceb-887f-d567974fcd08/5a_heavy_bombardment.jpg__1240x510_q85_subject_location-377%2C187_subsampling-2.jpg",
     video: bombardmentVid,
   },
   {
@@ -146,7 +146,7 @@ export const sections = [
       "Po koncu silovitih trkov in oblikovanja planetov je Osončje vstopilo v dolgotrajno obdobje stabilnosti. Planeti, lune in drugi objekti sedaj mirno krožijo po svojih orbitah okoli Sonca, kar omogoča razmere za življenje na Zemlji.",
     era: "Zadnjih 3 milijarde let",
     image:
-      "https://c02.purpledshub.com/uploads/sites/41/2019/10/GettyImages-460712793-769fd3a.jpg",
+      "https://images-assets.nasa.gov/image/PIA11800/PIA11800~orig.jpg",
     video: stableSolarSystemVid,
   },
   {
